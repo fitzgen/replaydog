@@ -2,3 +2,4 @@ settings/*local.py
 *.pyc
 env/
 build/
+database.db

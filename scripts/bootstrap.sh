@@ -3,6 +3,9 @@
 # Have the whole script fail if any individual command fails.
 set -e
 
+# Change to the correct directory.
+cd $(dirname $0)/..
+
 # Create the virtual environment and activate it.
 virtualenv \
     --python=$(which python2.7) \
@@ -14,9 +17,5 @@ source env/bin/activate
 # Install the requirements.
 pip install -r requirements.txt
 
-# Setup Django
-./manage.py validate
-./manage.py syncdb
-
 echo "source env/bin/activate # To enter the virtual environment"
-echo "./manage.py runserver # To start the development server"
+echo "# Next, set up your DB with the Django settings."
