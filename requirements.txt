@@ -1,2 +1,2 @@
 Flask==0.8
-sc2reader==0.2.0
+sc2reader==0.3.2

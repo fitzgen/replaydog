@@ -12,6 +12,10 @@ virtualenv \
 source env/bin/activate
 
 # Install the requirements.
+
+pip install mpyq # for some reason sc2reader won't install properly unless this
+                 # is installed before the requirements.txt
 pip install -r requirements.txt
 
-echo "source env/bin/activate # To enter the virtual environment"
+# Make the database, if it doesn't exist
+python scripts/makedb.py
