@@ -14,9 +14,4 @@ source env/bin/activate
 # Install the requirements.
 pip install -r requirements.txt
 
-# Setup Django
-./manage.py validate
-./manage.py syncdb
-
 echo "source env/bin/activate # To enter the virtual environment"
-echo "./manage.py runserver # To start the development server"
