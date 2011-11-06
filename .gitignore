@@ -2,4 +2,5 @@ settings_local.py
 *.pyc
 env/
 build/
+uploads/
 replaydog.db

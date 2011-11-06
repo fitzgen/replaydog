@@ -19,3 +19,6 @@ pip install -r requirements.txt
 
 # Make the database, if it doesn't exist
 python scripts/makedb.py
+
+# Make the directory for storing uploads
+mkdir -p uploads
